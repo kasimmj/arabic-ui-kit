@@ -1,0 +1,32 @@
+{
+  "name": "@kasimmj/arabic-ui-kit",
+  "version": "0.1.0",
+  "description": "Production RTL Arabic UI component library for React. 80+ components. Tailwind + accessible + beautiful.",
+  "main": "dist/index.js",
+  "module": "dist/index.mjs",
+  "types": "dist/index.d.ts",
+  "type": "module",
+  "exports": {
+    ".": {
+      "import": "./dist/index.mjs",
+      "require": "./dist/index.js",
+      "types": "./dist/index.d.ts"
+    },
+    "./styles.css": "./dist/styles.css"
+  },
+  "scripts": {
+    "build": "tsup src/index.ts --format esm,cjs --dts",
+    "dev": "tsup src/index.ts --format esm --watch",
+    "storybook": "storybook dev -p 6006"
+  },
+  "keywords": ["react", "ui-kit", "arabic", "rtl", "tailwind", "components", "design-system", "accessible"],
+  "peerDependencies": {
+    "react": ">=18",
+    "react-dom": ">=18"
+  },
+  "author": "Kasim Mohammed <mrkasimmjk@gmail.com>",
+  "license": "MIT",
+  "repository": "git+https://github.com/kasimmj/arabic-ui-kit.git",
+  "homepage": "https://github.com/kasimmj/arabic-ui-kit",
+  "files": ["dist", "README.md", "LICENSE"]
+}
